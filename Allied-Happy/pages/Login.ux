@@ -1,0 +1,40 @@
+
+<Page ux:Class="Login">
+
+	<Router ux:Dependency="router" />	
+	
+	<JavaScript File="../js/login.js" />	
+
+	<DockPanel Background="#FFFFFF">
+		<Text ux:Class="WhiteText" TextColor="#000" />
+		<TextInput ux:Class="WhiteTextInput" PlaceholderColor="#000" TextColor="#000" CaretColor="#000" />
+
+		<StatusBarBackground Dock="Top" />
+		<BottomBarBackground Dock="Bottom" />			
+		
+		
+		<StackPanel Margin="30" Alignment="VerticalCenter" ItemSpacing="50">	
+			<Panel Alignment="VerticalCenter">						
+				<Image Source="logo" Width="500" Height="100" ContentAlignment="Center"/>				
+			</Panel>
+
+			<Panel Alignment="VerticalCenter" Background="#a5d6a7" Height="100">	
+				<Grid RowCount="4" ColumnCount="1">					
+					<WhiteTextInput PlaceholderText="username" Value="{username}" Alignment="HorizontalCenter"  />
+					<WhiteTextInput PlaceholderText="password" IsPassword="true" Value="{password}" Alignment="HorizontalCenter" />
+					<WhiteTextInput PlaceholderText="code campaign" IsPassword="true" Value="{codeCampaign}" Alignment="HorizontalCenter"/>
+				</Grid>
+			</Panel>	
+			<Panel>
+				<Button Text="Log in" Clicked="{goHome}"   /> <!--IsEnabled="{areCredentialsValid}" /-->
+				
+			</Panel>	
+			
+		</StackPanel>
+		
+	</DockPanel>
+
+	<StatusBarBackground DockPanel.Dock="Top"/>	
+	<BottomBarBackground DockPanel.Dock="Bottom" />
+	
+</Page>

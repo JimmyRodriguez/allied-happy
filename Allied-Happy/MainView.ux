@@ -1,0 +1,22 @@
+<App Background="#FFFFFF">
+	
+	<Router ux:Name="router" />
+
+	<ClientPanel Background="#FFFFFF">
+		<Navigator DefaultTemplate="landing">
+			<Landing ux:Template="landing" router="router"/>
+			<Login ux:Template="login" router="router" />
+			<Home ux:Template="home" router="router"/>			
+			<Environment ux:Template="environment" router="router"/>
+			<Friends ux:Template="friends" router="router"/>
+			<Work ux:Template="work" router="router"/>
+			<Salary ux:Template="salary" router="router"/>
+			<Thanks ux:Template="thanks" router="router"/>
+		</Navigator>
+	</ClientPanel>	
+
+</App>
+
+
+
+

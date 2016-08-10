@@ -1,0 +1,22 @@
+<Page ux:Class="Thanks">
+
+	<Router ux:Dependency="router" />
+
+	<DockPanel>
+
+		<StackPanel>
+			<Panel>
+				<Image  Width="250" Height="250">
+		    		<FileImageSource File="../Assets/Logotipo-alliedHappy-01.png" />
+				</Image>		
+			</Panel>
+			<Panel>
+				<Text TextAlignment="Center" FontSize="50.0">
+					Gracias!
+				</Text>
+			</Panel>
+		</StackPanel>	
+		
+	</DockPanel>
+	
+</Page>
