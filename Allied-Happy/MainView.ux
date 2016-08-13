@@ -2,8 +2,12 @@
 	
 	<Router ux:Name="router" />
 
+
 	<ClientPanel Background="#FFFFFF">
-		<Navigator DefaultTemplate="landing">
+		<OnBackButton>
+			<HomeScreen Type="Finish" />
+		</OnBackButton>
+		<Navigator DefaultTemplate="landing">			
 			<Landing ux:Template="landing" router="router"/>
 			<Login ux:Template="login" router="router" />
 			<Home ux:Template="home" router="router"/>			
