@@ -8,15 +8,9 @@
 	<FileImageSource File="../Assets/Logotipo-alliedHappy-01.png" ux:Global="logo"/>
 
 	<StackPanel Orientation="Vertical">
-
-		<Panel>		
-				
-			<Button Width="300" Height="300">  <!--Clicked="{goHappy}"-->
-				<Image Source="logo" Width="300" Height="300" ContentAlignment="Center"/>		    		
-			</Button>
-
-		</Panel>
-
+		
+				<Image Source="logo" Width="300" Height="300" ContentAlignment="VerticalCenter"/>		    		
+		
 	</StackPanel>
 			
 </Page>
