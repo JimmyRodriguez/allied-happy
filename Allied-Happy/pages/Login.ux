@@ -26,7 +26,8 @@
 				</Grid>
 			</Panel>	
 			<Panel>
-				<Button Text="Log in" Clicked="{goHome}"   /> <!--IsEnabled="{areCredentialsValid}" /-->
+
+				<ux:Include File="../components/LoginBtn.ux" />
 				
 			</Panel>	
 			

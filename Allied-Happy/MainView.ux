@@ -1,8 +1,7 @@
-<App Background="#FFFFFF">
+<App Background="#FFFFFF" >
 	
 	<Router ux:Name="router" />
-
-
+		
 	<ClientPanel Background="#FFFFFF">
 		<OnBackButton>
 			<HomeScreen Type="Finish" />
