@@ -13,23 +13,18 @@
 		<BottomBarBackground Dock="Bottom" />			
 		
 		
-		<StackPanel Margin="30" Alignment="VerticalCenter" ItemSpacing="50">	
-			<Panel Alignment="VerticalCenter">						
-				<Image Source="logo" Width="500" Height="100" ContentAlignment="Center"/>				
-			</Panel>
+		<StackPanel Margin="30" Alignment="VerticalCenter" ItemSpacing="10">
 
-			<Panel Alignment="VerticalCenter" Background="#a5d6a7" Height="100">	
-				<Grid RowCount="4" ColumnCount="1">					
+								
+				<Image Source="logo" Width="500" Height="100" ContentAlignment="Center"/>				
+			
+				<Grid RowCount="4" ColumnCount="1" Width="500" Height="150">					
 					<WhiteTextInput PlaceholderText="username" Value="{username}" Alignment="HorizontalCenter"  />
 					<WhiteTextInput PlaceholderText="password" IsPassword="true" Value="{password}" Alignment="HorizontalCenter" />
 					<WhiteTextInput PlaceholderText="code campaign" IsPassword="true" Value="{codeCampaign}" Alignment="HorizontalCenter"/>
 				</Grid>
-			</Panel>	
-			<Panel>
-
-				<ux:Include File="../components/LoginBtn.ux" />
-				
-			</Panel>	
+			
+				<ux:Include File="../components/LoginBtn.ux" />				
 			
 		</StackPanel>
 		

@@ -8,7 +8,7 @@
 	<FileImageSource File="../Assets/Logotipo-alliedHappy-01.png" ux:Global="logo"/>
 
 	<DockPanel>	
-			<Image Source="logo" Width="100" Alignment="VerticalCenter" ux:Name="landing"/>
+			<Image Source="logo" Width="10" Alignment="VerticalCenter" ux:Name="landing"/>
 			<ActivatingAnimation>
 				<Change landing.Width="300"/>
 			</ActivatingAnimation>						
