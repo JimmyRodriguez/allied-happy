@@ -1,16 +1,12 @@
 <Page ux:Class="Environment">
 
 	<Router ux:Dependency="router" />
+	<JavaScript File="../js/Environments.js" />		
 
-	
+	<DockPanel Background="#FFFFFF" >
 
-	<DockPanel Background="#FFFFFF">			
-
-		<JavaScript File="../js/Environments.js" />		
-
-				
 			<StackPanel ItemSpacing="30">
-				<!-- here content in directory components -->	
+			
 				<Panel Width="600" Height="25">
 						
 					<Image Source="logo" Width="150" Height="150" Alignment="CenterLeft"/>														

@@ -12,22 +12,18 @@
 		
 		<JavaScript File="../js/Home.js" />
 			
-				<StackPanel ItemSpacing="30">	
-				
-				<WhileWindowLandscape>	<!-- here content in directory components -->	
+				<StackPanel ItemSpacing="30">				
+					<!-- here content in directory components -->	
 					<Panel Width="600" Height="25">						
 						<Image Source="logo" Width="150" Height="150" Alignment="CenterLeft"/>												
 					</Panel><!--happy.logo /-->
-				</WhileWindowLandscape>
 				
-				<WhileWindowLandscape>
 					<Panel Width="700" Height="45">
 						<Text TextAlignment="Center" FontSize="20" TextColor="#000">
 							¿Como fue tu experiencia en Allied Global?   				
 						</Text>	
 					</Panel> <!--happy.question /-->
-				</WhileWindowLandscape>
-				<WhileWindowLandscape>
+				
 					<Panel Width="500" Height="130">
 						<Grid RowCount="1" ColumnCount="4"> <!-- Rows="10*,10*,10*"-->					
 
@@ -65,8 +61,6 @@
 							
 						</Grid>						
 					</Panel>	
-				</WhileWindowLandscape>
-									
 				</StackPanel>				
 			
 

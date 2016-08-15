@@ -2,14 +2,23 @@
 
 	<Router ux:Dependency="router" />
 
-	<DockPanel>		
-			
-		<Image  Width="150" Height="150">
-    		<FileImageSource File="../Assets/Logotipo-alliedHappy-01.png" />
-		</Image>		
-		<Text TextAlignment="Center" FontSize="25.0">
-			Gracias!
-		</Text>		
+	<DockPanel>
+		<StackPanel>		
+			<Grid RowCount="2" ColumnCount="1">
+				<Panel>
+					<Image>
+			    		<FileImageSource File="../Assets/Logotipo-alliedHappy-01.png" />
+					</Image>
+				</Panel>
+
+				<Panel>
+					<Text TextAlignment="Center" FontSize="25.0">
+						Gracias!
+					</Text>
+				</Panel>
+
+			</Grid>	
+		</StackPanel>	
 		
 	</DockPanel>
 	

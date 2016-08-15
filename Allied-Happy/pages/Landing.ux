@@ -10,7 +10,7 @@
 	<DockPanel>	
 			<Image Source="logo" Width="10" Alignment="VerticalCenter" ux:Name="landing"/>
 			<ActivatingAnimation>
-				<Change landing.Width="300"/>
+				<Change landing.Width="400"/>
 			</ActivatingAnimation>						
 	</DockPanel>
 			

@@ -1,10 +1,10 @@
-<Panel Margin="5" Padding="20" Alignment="Center">
-	<Rectangle Width="150" Height="50" Layer="Background" Fill="#81c784" CornerRadius="20" />
-	<Button Width="150" Height="50" Text="Login" Clicked="{goHome}" />
+<Panel Margin="20" Padding="20" Alignment="Center">
+	<Rectangle Width="150" Height="40" Layer="Background" Fill="#8bc34a" CornerRadius="20" />
+	<Button Width="150" Height="40" Text="Login" Clicked="{goHome}" />
 	<WhilePressed >
 		<Scale
 			Factor=".9"
-			Duration=".2"
+			Duration=".1"
 			Easing="BounceOut"
 			EasingBack="BounceIn"/>		
 	</WhilePressed>

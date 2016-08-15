@@ -6,25 +6,41 @@
 	<JavaScript File="../js/login.js" />	
 
 	<DockPanel Background="#FFFFFF">
-		<Text ux:Class="WhiteText" TextColor="#000" />
 		<TextInput ux:Class="WhiteTextInput" PlaceholderColor="#000" TextColor="#000" CaretColor="#000" />
 
 		<StatusBarBackground Dock="Top" />
 		<BottomBarBackground Dock="Bottom" />			
 		
 		
-		<StackPanel Margin="30" Alignment="VerticalCenter" ItemSpacing="10">
+		<StackPanel Margin="15" Padding="10">
 
+			<Grid RowCount="1" ColumnCount="2">
+				<StackPanel>
+					<Grid RowCount="2" ColumnCount="1">
+						<Panel Alignment="VerticalCenter">						
+							<Image Source="logo"/>						
+						</Panel>
+						<Panel>
+							<Text Alignment="Center">Welcome, Please register</Text>						
+						</Panel>
+					</Grid>
+				</StackPanel>
+
+				<StackPanel Background="#a5d6a7">
+					<Panel >
+						<Grid RowCount="4" ColumnCount="1" Width="250" Height="150">					
+							<WhiteTextInput PlaceholderText="username" Value="{username}" Alignment="HorizontalCenter"  />
+							<WhiteTextInput PlaceholderText="password" IsPassword="true" Value="{password}" Alignment="HorizontalCenter" />
+							<WhiteTextInput PlaceholderText="code campaign" IsPassword="true" Value="{codeCampaign}" Alignment="HorizontalCenter"/>							
+						</Grid>
+																	
+					</Panel>					
 								
-				<Image Source="logo" Width="500" Height="100" ContentAlignment="Center"/>				
-			
-				<Grid RowCount="4" ColumnCount="1" Width="500" Height="150">					
-					<WhiteTextInput PlaceholderText="username" Value="{username}" Alignment="HorizontalCenter"  />
-					<WhiteTextInput PlaceholderText="password" IsPassword="true" Value="{password}" Alignment="HorizontalCenter" />
-					<WhiteTextInput PlaceholderText="code campaign" IsPassword="true" Value="{codeCampaign}" Alignment="HorizontalCenter"/>
-				</Grid>
-			
-				<ux:Include File="../components/LoginBtn.ux" />				
+					<ux:Include File="../components/LoginBtn.ux" />	
+					
+
+				</StackPanel>
+			</Grid>		
 			
 		</StackPanel>
 		
