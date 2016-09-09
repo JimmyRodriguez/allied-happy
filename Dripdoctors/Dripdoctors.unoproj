@@ -1,0 +1,22 @@
+{
+  "RootNamespace":"",
+  "Packages": [
+  	"Fuse",
+  	"FuseJS",
+    "Fuse.GeoLocation"
+  ],
+  "Includes": [
+    "*"
+  ],
+  
+  "Android": {
+       "Icons": {
+           "LDPI": "Assets/logodrip.png",
+           "MDPI": "Assets/logodrip.png",
+           "HDPI": "Assets/logodrip.png",
+           "XHDPI": "Assets/logodrip.png",
+           "XXHDPI": "Assets/logodrip.png",
+           "XXXHDPI": "Assets/logodrip.png",
+     }
+  }
+}

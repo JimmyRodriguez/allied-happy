@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:53
+-keep class com.apps.dripdoctors.Android_android_app_Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.apps.dripdoctors.Dripdoctors { <init>(...); }
+

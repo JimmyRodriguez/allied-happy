@@ -1,0 +1,15 @@
+<Panel Margin="20" Padding="20" Alignment="Center">
+	<Rectangle Width="150" Height="40" Layer="Background" Fill="#00b8d4" CornerRadius="15" />
+	<Button Width="150" Height="40" Clicked="{{goHome}}">		
+		<Text FontSize="20" TextColor="#fff" Alignment="Center">Login</Text> 
+		<DropShadow/>
+	</Button>
+	<WhilePressed >
+		<Scale
+			Factor=".9"
+			Duration=".1"
+			Easing="BounceOut"
+			EasingBack="BounceIn"/>		
+	</WhilePressed>
+</Panel>
+

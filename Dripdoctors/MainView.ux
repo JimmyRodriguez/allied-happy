@@ -1,0 +1,24 @@
+<App Background="#FFFFFF">
+	
+	<Router ux:Name="router" />
+		
+	<ClientPanel Background="#FFFFFF">
+
+		<OnBackButton>
+			<HomeScreen Type="Finish" />
+		</OnBackButton>
+
+
+		<Navigator DefaultTemplate="landing">
+			<Landing ux:Template="landing" router="router"/>
+			<Login ux:Template="login" router="router" />			
+			<Home ux:Template="home" router="router"/>				
+		</Navigator>
+		
+	</ClientPanel>	
+
+	<StatusBarBackground Dock="Top" />
+	<BottomBarBackground Dock="Bottom" />
+
+
+</App>

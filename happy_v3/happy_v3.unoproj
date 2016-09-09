@@ -1,0 +1,27 @@
+{
+  "RootNamespace":"",
+  "Packages": [
+  	"Fuse",
+  	"FuseJS"
+  ],
+   "Includes": [
+    "*",
+    "HomeScreen.uno"    
+   ],
+
+  "Mobile": {   
+    "Orientations": "Landscape"
+  },
+
+  "Android": {
+       "Icons": {
+           "LDPI": "Assets/Logotipo-AlliedHappy-01.png",
+           "MDPI": "Assets/Logotipo-AlliedHappy-01.png",
+           "HDPI": "Assets/Logotipo-AlliedHappy-01.png",
+           "XHDPI": "Assets/Logotipo-AlliedHappy-01.png",
+           "XXHDPI": "Assets/Logotipo-AlliedHappy-01.png",
+           "XXXHDPI": "Assets/Logotipo-AlliedHappy-01.png",
+     }
+  }
+  
+}

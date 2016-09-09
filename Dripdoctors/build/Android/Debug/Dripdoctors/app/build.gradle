@@ -1,0 +1,119 @@
+// This file was generated based on C:\ProgramData\Uno\Packages\UnoCore\0.32.2\Targets\Android@(Project.Name)\app\build.gradle.
+// WARNING: Changes might be lost if you edit this file directly.
+apply plugin: 'com.android.model.application'
+
+dependencies {
+    compile fileTree(dir: 'src/main/libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:+'
+//#if #(Gradle.Dependency.Compile:IsRequired)
+//    #(Gradle.Dependency.Compile:Join('\n', 'compile \'', '\''))
+//#endif
+//#if #(Gradle.Dependency:IsRequired)
+//    #(Gradle.Dependency:Join('\n'))
+//#endif
+}
+
+
+task copySharedLibraries {
+    copy {
+        from 'C:/ProgramData/Uno/Packages/Fuse.Scripting.V8/0.32.14/lib/Android/libV8Simple.so'
+        into file('src/main/jniLibs/armeabi-v7a')
+    }
+    copy {
+        from 'C:/Users/rodriguez/AppData/Local/Fusetools/Fuse/Android/AndroidNDK/sources/cxx-stl/stlport/libs/armeabi-v7a/libstlport_shared.so'
+        into file('src/main/jniLibs/armeabi-v7a')
+    }
+}
+
+build.dependsOn copySharedLibraries
+
+//#if #(Gradle.Repository:IsRequired)
+//repositories {
+//    #(Gradle.Repository:Join('\n'))
+//}
+//#endif
+
+model {
+    repositories {
+        libs(PrebuiltLibraries) {
+            prebuilt {
+                binaries.withType(SharedLibraryBinary) {
+                    sharedLibraryFile = file('C:/ProgramData/Uno/Packages/Fuse.Scripting.V8/0.32.14/lib/Android/libV8Simple.so')
+                    sharedLibraryFile = file('C:/Users/rodriguez/AppData/Local/Fusetools/Fuse/Android/AndroidNDK/sources/cxx-stl/stlport/libs/armeabi-v7a/libstlport_shared.so')
+                }
+            }
+        }
+//#if #(Gradle.Model.Repository:IsRequired)
+//        #(Gradle.Model.Repository:Join('\n'))
+//#endif
+    }
+
+    android.lintOptions {
+        checkReleaseBuilds = false
+    }
+
+    android {
+        compileSdkVersion = 21
+        buildToolsVersion = "23.0.1"
+
+        defaultConfig.with {
+            applicationId = "com.apps.dripdoctors"
+            minSdkVersion.apiLevel = 10
+            targetSdkVersion.apiLevel = 21
+            versionCode = 0
+            versionName = "0.0.0"
+        }
+    }
+
+//#if #(Project.Android.Key.Store:IsSet)
+//    android.signingConfigs {
+//        create("release") {
+//            keyAlias = "#(Project.Android.Key.Alias)"
+//            keyPassword = "#(Project.Android.Key.AliasPassword)"
+//            storeFile = file("#(Project.Android.Key.Store:Path)")
+//            storePassword = "#(Project.Android.Key.StorePassword)"
+//        }
+//    }
+//#endif
+
+    android.ndk {
+        moduleName = "Dripdoctors"
+        debuggable = true
+        platformVersion = 9
+        CFlags.addAll(["-std=c99"])
+        CFlags.addAll(["-IC:/Users/rodriguez/workspace/FUSE/apps-fuse/Dripdoctors/build/Android/Debug/Dripdoctors/app/src/main/include", "-IC:/ProgramData/Uno/Packages/Fuse.Scripting.V8/0.32.14", "-IC:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/include"])
+        CFlags.addAll([])
+        cppFlags.addAll(["-std=c++11", "-fexceptions", "-frtti", "-Wno-invalid-offsetof"])
+        cppFlags.addAll(["-IC:/Users/rodriguez/workspace/FUSE/apps-fuse/Dripdoctors/build/Android/Debug/Dripdoctors/app/src/main/include", "-IC:/ProgramData/Uno/Packages/Fuse.Scripting.V8/0.32.14", "-IC:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/include"])
+        cppFlags.addAll([])
+        ldFlags.addAll(["-LC:/ProgramData/Uno/Packages/Fuse.Scripting.V8/0.32.14/lib/Android", "-LC:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/lib/armeabi-v7a", "-LC:/Users/rodriguez/AppData/Local/Fusetools/Fuse/Android/AndroidNDK/sources/cxx-stl/stlport/libs/armeabi-v7a"])
+        ldLibs.addAll(["C:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/lib/armeabi-v7a/libuImage.a", "C:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/lib/armeabi-v7a/libpng.a", "C:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/lib/armeabi-v7a/libjpeg.a", "C:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/lib/armeabi-v7a/libfreetype.a", "C:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/lib/armeabi-v7a/libXliMain.a", "C:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/lib/armeabi-v7a/libXliPlatform.a", "C:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/lib/armeabi-v7a/libuBase.a"])
+        ldLibs.addAll(["android", "EGL", "GLESv2", "log", "stlport_shared", "V8Simple", "z"])
+        stl = "stlport_shared"
+    }
+
+    android.sources {
+        main {
+            jni {
+                dependencies {
+                    library "prebuilt"
+                }
+            }
+        }
+    }
+
+    android.buildTypes {
+        release {
+            minifyEnabled = false
+            proguardFiles.add(file('proguard-rules.txt'))
+        }
+    }
+
+    android.productFlavors {
+        // for detailed abiFilter descriptions, refer to "Supported ABIs" @
+        // https://developer.android.com/ndk/guides/abis.html#sa
+        create("arm7") {
+            ndk.abiFilters.add("armeabi-v7a")
+        }
+    }
+}

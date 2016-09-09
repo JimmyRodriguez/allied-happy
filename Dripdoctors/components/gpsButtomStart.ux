@@ -1,0 +1,16 @@
+<Panel Margin="20" Padding="20" Alignment="Center">
+	
+	<Button Width="150" Height="40" Text="Start Service" Clicked="{startContinuousListener}">
+		<DropShadow/>
+	</Button>
+	<Rectangle Width="150" Height="40" Layer="Background" Fill="#000" CornerRadius="8" />
+
+	<WhilePressed >
+		<Scale
+			Factor=".9"
+			Duration=".1"
+			Easing="BounceOut"
+			EasingBack="BounceIn"/>		
+	</WhilePressed>
+</Panel>
+

@@ -3,18 +3,14 @@ var nextAsk = function irThanks(){
 }
 setTimeout(nextAsk,2000); 
 
-var goLanding = function redirect() {
-	router.goto("landing");
- };
 
-function goThanks(){
-	router.goto("login");	
-		
-}
-setTimeout(goLanding,2000);
+var goThanks = function goThanks(){
+	router.goto("thanks");			
+};
 
 
 module.exports = {
 
 	goThanks : goThanks
 };
+

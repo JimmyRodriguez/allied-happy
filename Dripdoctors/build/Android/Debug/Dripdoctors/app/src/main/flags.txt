@@ -1,0 +1,7 @@
+C:/Users/rodriguez/AppData/Local/Fusetools/Fuse/Android/AndroidNDK
+9
+armeabi-v7a
+-O3 -g -DNDEBUG
+
+ -IC:/ProgramData/Uno/Packages/Fuse.Scripting.V8/0.32.14 -IC:/ProgramData/Uno/Packages/UnoCore/0.32.2/prebuilt/Android/include
+C:/Users/rodriguez/AppData/Local/Fusetools/Fuse/Android/AndroidNDK/sources/cxx-stl/stlport/stlport

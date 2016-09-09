@@ -1,0 +1,70 @@
+<Page ux:Class="Salary">
+
+	<Router ux:Dependency="router" />
+	
+
+	<DockPanel Background="#FFFFFF">			
+
+		<JavaScript File="../js/Salary.js" />
+		
+				
+			<StackPanel ItemSpacing="30">
+				<!-- here content in directory components -->	
+				<Panel Width="600" Height="25">
+						
+					<Image Source="logo" Width="150" Height="150" Alignment="CenterLeft"/>														
+				</Panel><!--happy.logo /-->
+
+				<Panel Width="700" Height="45">
+
+					<Text TextAlignment="Center" FontSize="20" TextColor="#000">
+						¿Consideras que Allied Global tiene sueldos competitivos?   				
+					</Text>	
+
+				</Panel> <!--happy.question5 /-->
+				<Panel Width="500" Height="130">
+					<Grid RowCount="1" ColumnCount="4"> <!-- Rows="10*,10*,10*"-->					
+
+						<Button Width="100" Height="100" Margin="30" Clicked="{goThanks}">
+							<Image Source="carita1" Width="100" Height="100">
+								<WhilePressed>
+									<Scale Factor="-1.5" Duration="1.0"/>							
+								</WhilePressed>
+							</Image>						
+						</Button>
+					
+
+						<Button Width="100" Height="100" Margin="20" Clicked="{goThanks}">
+							<Image Source="carita2" Width="100" Height="100">
+								<WhilePressed>
+									<Scale Factor="-1.5" Duration="1.0"/>							
+								</WhilePressed>
+							</Image>						
+						</Button>
+
+						<Button Width="100" Height="100" Margin="10" Clicked="{goThanks}">
+							<Image Source="carita3" Width="100" Height="100">
+								<WhilePressed>
+									<Scale Factor="-1.5" Duration="1.0"/>							
+								</WhilePressed>
+							</Image>						
+						</Button>
+
+						<Button Width="100" Height="100" Margin="20"  Clicked="{goThanks}" >
+							<Image Source="carita4" Width="100" Height="100">
+								<WhilePressed>
+									<Scale Factor="-1.5" Duration="1.0"/>							
+								</WhilePressed>
+							</Image>						
+						</Button>
+						
+					</Grid>						
+				</Panel>						
+												
+			</StackPanel>			
+	
+		<StatusBarBackground DockPanel.Dock="Top"/>	
+		<BottomBarBackground DockPanel.Dock="Bottom" />
+
+	</DockPanel>
+</Page>

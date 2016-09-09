@@ -1,0 +1,21 @@
+<Page ux:Class="Login">
+	<Router ux:Dependency="router" />
+
+	<JavaScript File="../js/login.js" />
+
+	<DockPanel>
+		<StackPanel ItemSpacing="40">
+			<Panel>
+				<Text>User</Text>	
+
+			</Panel>
+			<Panel>
+				<Text>Password</Text>
+			</Panel>
+			<Panel>
+				<ux:Include File="../components/loginButtom.ux" />
+			</Panel>
+		</StackPanel>
+		
+	</DockPanel>
+</Page>

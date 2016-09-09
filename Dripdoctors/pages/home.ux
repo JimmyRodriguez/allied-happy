@@ -1,0 +1,52 @@
+<Page ux:Class="Home">
+
+	<Router ux:Dependency="router" />
+
+	<StatusBarBackground Dock="Top" />
+	<BottomBarBackground Dock="Bottom" />
+
+	<JavaScript File="../js/geolocation.js" />
+	
+	<DockPanel>	
+		
+			<Panel Alignment="Center" Margin="20">		
+
+				<StackPanel ItemSpacing="40">
+
+					<Panel Background="#e0f7fa">
+						<Grid RowCount="2" ColumnCount="1" >
+							<Text>Immediate:</Text>
+							<Text FontSize="11" Value="{immediateLocation}" />
+						</Grid>
+					</Panel>
+
+					<Panel Background="#b2ebf2">
+						<Grid RowCount="2" ColumnCount="1">
+							<Text>Timeout:</Text>
+							<Text Value="{timeoutLocation}" />
+						</Grid>
+					</Panel>
+
+					<Panel Background="#80deea">
+						<Grid>
+							<Text>Continuous:</Text>
+							<Text FontSize="11" Value="{continuousLocation}" />
+						</Grid>
+					</Panel>
+					<Panel>
+						<Grid RowCount="1" ColumnCount="2">
+							<ux:Include File="../components/gpsButtomStart.ux"/>
+							<ux:Include File="../components/gpsButtomStop.ux" />				
+						</Grid>				
+					</Panel>
+
+					
+				</StackPanel>
+			</Panel>
+
+			
+	
+
+	</DockPanel>
+
+</Page>

@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:53
+-keep class Fuse.Preview.Android_android_app_Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class Fuse.Preview.Dripdoctors { <init>(...); }
+

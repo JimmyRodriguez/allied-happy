@@ -10,7 +10,6 @@ setTimeout(nextAsk,2000);
 
  };
 
-
 module.exports ={ 
 
 	goEnvironment : goEnvironment
