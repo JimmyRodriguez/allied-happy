@@ -5,12 +5,11 @@
 
 	<JavaScript File="../js/Landing.js"/>
 
-	<FileImageSource File="../Assets/Logotipo-alliedHappy-01.png" ux:Global="logo"/>
+	<FileImageSource File="../Assets/Logotipo-TellMe.png" ux:Global="logo"/>
 
 	<DockPanel>	
-		<Image Source="logo" Width="10" Alignment="VerticalCenter" StretchMode="UniformToFill" ux:Name="landing">
-			<DropShadow Size="10" Distance="5" Spread="0.4" Color="#ff6f00" Angle="90"/>
-		</Image>
+		<Image Source="logo" Width="10" Alignment="VerticalCenter" StretchMode="UniformToFill" ux:Name="landing"/>
+			
 		<ActivatingAnimation>
 			<Change landing.Width="400"/>
 		</ActivatingAnimation>						

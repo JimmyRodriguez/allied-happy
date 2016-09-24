@@ -7,7 +7,7 @@ setTimeout(nextAsk,2000);
 
  function goEnvironment() {
 
-	router.goto("environment")
+	router.goto("thanks")
 
  };
 

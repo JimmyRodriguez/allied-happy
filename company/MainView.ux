@@ -1,0 +1,38 @@
+<App>
+	
+	<JavaScript File="js/MainView.js"/>
+
+	<StackPanel Margin="16" Padding="20">
+
+		<Text TextColor="#000" TextAlignment="Center">COMPANY</Text>
+		<Panel Padding="10">
+			
+			
+			<Grid RowCount="6" CellSpacing="20" Opacity=".2">
+				<TextInput PlaceholderText="idCompany" Background="#e0f7fa" Height="40" Value="{idCompany}" />
+				<TextInput PlaceholderText="idState" Background="#e0f7fa" Height="40" Value="{idState}" />
+				<TextInput PlaceholderText="nameCompany" Background="#e0f7fa" Height="40" Value="{nameCompany}" />
+				<TextInput PlaceholderText="emailCompany" Background="#e0f7fa" Height="40" Value="{emailCompany}" />
+				<TextInput PlaceholderText="telCompany" Background="#e0f7fa" Height="40" Value="{telCompany}" />
+				<TextInput PlaceholderText="dirCompany" Background="#e0f7fa" Height="40" Value="{dirCompany}" />
+				
+			</Grid>
+			
+		</Panel>
+		<Panel Height="200" Width="400">
+			<Grid RowCount="2" >
+
+				<Button LimitHeight="50pt" LimitWidth="150pt" Alignment="Center" Text="Guardar" Clicked="{insertarEmpresaForPost}"/>
+
+				<Text Alignment="Center" Value="{error}"/>
+				
+			</Grid>
+			
+		</Panel>
+	</StackPanel>
+
+</App>
+
+
+
+

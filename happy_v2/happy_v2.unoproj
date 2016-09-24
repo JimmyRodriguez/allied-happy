@@ -15,12 +15,12 @@
 
   "Android": {
        "Icons": {
-           "LDPI": "Assets/Logotipo-AlliedHappy-01.png",
-           "MDPI": "Assets/Logotipo-AlliedHappy-01.png",
-           "HDPI": "Assets/Logotipo-AlliedHappy-01.png",
-           "XHDPI": "Assets/Logotipo-AlliedHappy-01.png",
-           "XXHDPI": "Assets/Logotipo-AlliedHappy-01.png",
-           "XXXHDPI": "Assets/Logotipo-AlliedHappy-01.png",
+           "LDPI": "Assets/Logotipo-TellMe.png",
+           "MDPI": "Assets/Logotipo-TellMe.png",
+           "HDPI": "Assets/Logotipo-TellMe.png",
+           "XHDPI": "Assets/Logotipo-TellMe.png",
+           "XXHDPI": "Assets/Logotipo-TellMe.png",
+           "XXXHDPI": "Assets/Logotipo-TellMe.png",
      }
   }
   

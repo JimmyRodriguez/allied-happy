@@ -3,10 +3,11 @@
 	
 	<Router ux:Dependency="router" />
 	
-	<FileImageSource File="../Assets/caritas-01v2.png" ux:Global="carita1"/>
-	<FileImageSource File="../Assets/caritas-02v2.png" ux:Global="carita2" />
-	<FileImageSource File="../Assets/caritas-03v2.png" ux:Global="carita3"/>
-	<FileImageSource File="../Assets/caritas-04v2.png" ux:Global="carita4"/>	
+	
+	<FileImageSource File="../Assets/caritas_Artboard9copy.jpg" ux:Global="carita1"/>
+	<FileImageSource File="../Assets/caritas_Artboard10copy.jpg" ux:Global="carita2" />
+	<FileImageSource File="../Assets/caritas_Artboard11copy.jpg" ux:Global="carita3"/>
+	<FileImageSource File="../Assets/caritas_Artboard12copy.jpg" ux:Global="carita4"/>	
 	
 	<DockPanel Background="#FFFFFF" Alignment="HorizontalCenter" >	
 		
@@ -15,7 +16,7 @@
 				<StackPanel ItemSpacing="30">				
 					<!-- here content in directory components -->	
 					<Panel Width="600" Height="25">						
-						<Image Source="logo" Width="150" Height="150" Alignment="CenterLeft"/>												
+						<Image Source="logo" Width="150" Height="150" Alignment="Center"/>												
 					</Panel><!--happy.logo /-->
 				
 					<Panel Width="700" Height="45">
@@ -25,12 +26,13 @@
 					</Panel> <!--happy.question /-->
 				
 					<Panel Width="500" Height="130">
-						<Grid RowCount="1" ColumnCount="4"> <!-- Rows="10*,10*,10*"-->					
+						<Grid RowCount="1" ColumnCount="4"> 				
 
 							<Button Width="100" Height="100" Margin="30" Clicked="{goEnvironment}">
 								<Image Source="carita1" Width="100" Height="100">
 									<WhilePressed>
-										<Scale Factor="-1.5" Duration="1.0"/>							
+										<Scale Factor="-1.5" Duration="1.0"/>	
+
 									</WhilePressed>
 								</Image>						
 							</Button>					

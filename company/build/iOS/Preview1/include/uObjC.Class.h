@@ -1,0 +1,27 @@
+#pragma once
+
+#include <iOS.Foundation.NSArray.h>
+#include <iOS.Foundation.NSAttributedString.h>
+#include <iOS.Foundation.NSBundle.h>
+#include <iOS.Foundation.NSDictionary.h>
+#include <iOS.Foundation.NSError.h>
+#include <iOS.Foundation.NSMutableArray.h>
+#include <iOS.Foundation.NSMutableAttributedString.h>
+#include <iOS.Foundation.NSMutableDictionary.h>
+#include <iOS.Foundation.NSNumber.h>
+#include <iOS.Foundation.NSObject.h>
+#include <iOS.Foundation.NSString.h>
+#include <iOS.Foundation.NSUUID.h>
+#include <iOS.Foundation.NSValue.h>
+#include <iOS.QuartzCore.CAGradientLayer.h>
+#include <iOS.QuartzCore.CALayer.h>
+#include <iOS.UIKit.NSLayoutManager.h>
+#include <iOS.UIKit.NSMutableParagraphStyle.h>
+#include <iOS.UIKit.NSParagraphStyle.h>
+#include <iOS.UIKit.NSTextContainer.h>
+#include <iOS.UIKit.NSTextStorage.h>
+#include <iOS.UIKit.UIApplication.h>
+#include <iOS.UIKit.UIColor.h>
+#include <iOS.UIKit.UIDevice.h>
+#include <iOS.UIKit.UIFont.h>
+#include <iOS.UIKit.UIView.h>

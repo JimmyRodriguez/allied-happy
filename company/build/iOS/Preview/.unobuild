@@ -1,0 +1,4 @@
+$: -2000235561
+BuildCommand: build.sh
+RunCommand: run.sh
+Product: build/Release-iphoneos/company.app/company

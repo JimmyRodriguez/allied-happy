@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:53
+-keep class com.apps.company.Android_android_app_Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.apps.company.company { <init>(...); }
+

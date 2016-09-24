@@ -1,0 +1,4 @@
+$: 1466464105
+BuildCommand: build.sh
+RunCommand: run.sh
+Product: company.apk

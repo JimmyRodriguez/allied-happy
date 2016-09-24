@@ -3,10 +3,10 @@
 	
 	<Router ux:Dependency="router" />
 	
-	<FileImageSource File="../Assets/caritas-01v2.png" ux:Global="carita1"/>
-	<FileImageSource File="../Assets/caritas-02v2.png" ux:Global="carita2" />
-	<FileImageSource File="../Assets/caritas-03v2.png" ux:Global="carita3"/>
-	<FileImageSource File="../Assets/caritas-04v2.png" ux:Global="carita4"/>	
+	<FileImageSource File="../Assets/caritas_Artboard9copy.png" ux:Global="carita1"/>
+	<FileImageSource File="../Assets/caritas_Artboard10copy.png" ux:Global="carita2" />
+	<FileImageSource File="../Assets/caritas_Artboard11copy.png" ux:Global="carita3"/>
+	<FileImageSource File="../Assets/caritas_Artboard12copy.png" ux:Global="carita4"/>	
 	
 	<DockPanel Background="#FFFFFF" Alignment="HorizontalCenter" >	
 		

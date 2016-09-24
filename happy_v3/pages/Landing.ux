@@ -5,7 +5,7 @@
 
 	<JavaScript File="../js/Landing.js"/>
 
-	<FileImageSource File="../Assets/Logotipo-alliedHappy-01.png" ux:Global="logo"/>
+	<FileImageSource File="../Assets/Logotipo-TellMe.png" ux:Global="logo"/>
 
 	<DockPanel>	
 		<Image Source="logo" Width="10" Alignment="VerticalCenter" StretchMode="UniformToFill" ux:Name="landing">

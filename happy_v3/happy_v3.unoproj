@@ -1,5 +1,6 @@
 {
   "RootNamespace":"",
+  "Version": "1.0.0",
   "Packages": [
   	"Fuse",
   	"FuseJS"
